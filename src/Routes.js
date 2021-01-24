@@ -21,6 +21,7 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <Route path="/" exact component={Home} />
+      
     </BrowserRouter>
   );
 };
