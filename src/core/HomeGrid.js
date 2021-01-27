@@ -32,7 +32,6 @@ const HomeGrid = () => {
             title="تحولات سازمانی در فولکس واگن؛ از حفظ لامبورگینی و دوکاتی تا
             واگذاری مدیریت بن"
           />
-          {`/////////////////////////////////////////////////////////////////////////////////`}
           <div id="w-node-0ea76eb99c35-129571b5" class="second-row-big-div">
             <div class="top-div">
               <div class="top-big-div-cat second-row-big-div-cat">
@@ -94,7 +93,6 @@ const HomeGrid = () => {
               </div>
             </div>
           </div>
-          {`/////////////////////////////////////////////////////////////////////////////////`}
 
           <HomeGridSingle
             divId="w-node-e228048e7a04-129571b5"
