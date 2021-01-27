@@ -1,62 +1,38 @@
 import React, { useState, useEffect } from "react";
+import HomeGridSingle from "./HomeGridSingle";
 
 const HomeGrid = () => {
-  
-
   return (
     /**************** >>>> HomeGrid start <<<< *****************/
     <div class="hero-grid-sec">
       <div class="hero-grid-div">
         <div class="w-layout-grid grid">
-          <div id="w-node-798c62728e47-129571b5" class="top-big-div box-shadow">
-            <div class="top-big-div-cat">نرم افزار</div>
-            <div class="top-big-div-font">
-              تریلر گیم‌پلی Sons of the Forest موجودات خوفناک بازی را نشان
-              می‌دهد
-            </div>
-            <div class="info-div">
-              <div class="info-subdiv">
-                <img
-                  src="https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/6002984d9043d0a0c5bdb150_rate-icon.svg"
-                  loading="lazy"
-                  alt=""
-                  class="image-2"
-                />
-                <div class="info-div-text">(۲۳) ۴/۲۷ از ۵</div>
-              </div>
-              <div class="info-subdiv">
-                <img
-                  src="https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/6002984cb4348137f2319d6a_like-icon.svg"
-                  loading="lazy"
-                  alt=""
-                  class="image-3"
-                />
-                <div class="info-div-text">۲۴۳</div>
-              </div>
-              <div class="info-subdiv">
-                <img
-                  src="https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/6002984d3f13762b38a4c17f_comment-icon.svg"
-                  loading="lazy"
-                  alt=""
-                  class="image-4"
-                />
-                <div class="info-div-text">۷۶</div>
-              </div>
-            </div>
-          </div>
-          <div id="w-node-093591b29eb0-129571b5" class="top-right-small-div">
-            <div class="top-small-div-cat">خبر</div>
-            <div class="top-small-div-font">
-              چرا ۲۰۲۱ سالی واقعا معرکه برای اکوسیستم ویندوز خواهد بود؟
-            </div>
-          </div>
-          <div id="w-node-4b1645d9add3-129571b5" class="second-row-medium-div">
-            <div class="second-row-medium-cat">کامپیوتر</div>
-            <div class="top-small-div-font second-row-medium-div-font">
-              تحولات سازمانی در فولکس واگن؛ از حفظ لامبورگینی و دوکاتی تا
-              واگذاری مدیریت بن
-            </div>
-          </div>
+          <HomeGridSingle
+            divId="w-node-798c62728e47-129571b5"
+            divStyleName="top-big-div"
+            catStyleName="top-big-div-cat"
+            titleStyleName="top-big-div-font"
+            cat="نرم افزار"
+            title="تریلر گیم‌پلی Sons of the Forest موجودات خوفناک بازی را نشان می‌دهد"
+          />
+          <HomeGridSingle
+            divId="w-node-093591b29eb0-129571b5"
+            divStyleName="top-right-small-div"
+            catStyleName="top-small-div-cat"
+            titleStyleName="top-small-div-font"
+            cat="خبر"
+            title="چرا ۲۰۲۱ سالی واقعا معرکه برای اکوسیستم ویندوز خواهد بود؟"
+          />
+          <HomeGridSingle
+            divId="w-node-4b1645d9add3-129571b5"
+            divStyleName="second-row-medium-div"
+            catStyleName="second-row-medium-cat"
+            titleStyleName="top-small-div-font second-row-medium-div-font"
+            cat="کامپیوتر"
+            title="تحولات سازمانی در فولکس واگن؛ از حفظ لامبورگینی و دوکاتی تا
+            واگذاری مدیریت بن"
+          />
+          {`/////////////////////////////////////////////////////////////////////////////////`}
           <div id="w-node-0ea76eb99c35-129571b5" class="second-row-big-div">
             <div class="top-div">
               <div class="top-big-div-cat second-row-big-div-cat">
@@ -118,12 +94,16 @@ const HomeGrid = () => {
               </div>
             </div>
           </div>
-          <div id="w-node-e228048e7a04-129571b5" class="last-row-small-div">
-            <div class="top-small-div-cat last-row-smal-div-cat">خبر</div>
-            <div class="top-small-div-font last-row-small-div-font">
-              راهکار مهندسی ژنتیک برای مبارزه با تغییرات اقلیمی
-            </div>
-          </div>
+          {`/////////////////////////////////////////////////////////////////////////////////`}
+
+          <HomeGridSingle
+            divId="w-node-e228048e7a04-129571b5"
+            divStyleName="last-row-small-div"
+            catStyleName="top-small-div-cat last-row-smal-div-cat"
+            titleStyleName="top-small-div-font last-row-small-div-font"
+            cat="خبر"
+            title="راهکار مهندسی ژنتیک برای مبارزه با تغییرات اقلیمی"
+          />
         </div>
       </div>
     </div>
