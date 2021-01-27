@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import NavCats from "./NavCats";
 
 const Navbar = () => {
   /*const [productsBySell, setProductsBySell] = useState([]);
@@ -53,7 +54,7 @@ const Navbar = () => {
       </div>
     </Layout>*/
 
-/**************** >>>> NAVBAR start <<<< *****************/
+    /**************** >>>> NAVBAR start <<<< *****************/
     <div className="navbar-sec">
       <div className="nav-parent-div">
         <div className="nav-child">
@@ -71,35 +72,9 @@ const Navbar = () => {
               className="search-icon"
             />
           </div>
-          <div className="nav-div-categories">
-            <div className="nav-cat-div">
-              <div className="nav-cat-text">کامپیوتر</div>
-              <img
-                src="https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/6002938791c6d6156a4a5c99_cat-dropdown-icon.svg"
-                loading="lazy"
-                alt=""
-                className="nav-cat-dropdown-icon"
-              />
-            </div>
-            <div className="nav-cat-div">
-              <div className="nav-cat-text">اخبار</div>
-            </div>
-            <div className="nav-cat-div">
-              <div className="nav-cat-text">کسب و کار</div>
-            </div>
-            <div className="nav-cat-div">
-              <div className="nav-cat-text">ماشین</div>
-            </div>
-            <div className="nav-cat-div">
-              <div className="nav-cat-text">بازی</div>
-            </div>
-            <div className="nav-cat-div">
-              <div className="nav-cat-text">علمی</div>
-            </div>
-            <div className="nav-cat-div">
-              <div className="nav-cat-text">موبایل</div>
-            </div>
-          </div>
+
+          <NavCats />
+
           <div className="nav-div-logo">
             <img
               src="https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/5ff56ffeffe0b07415c6f71a_T3CH.png"
@@ -112,8 +87,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-/**************** >>>> NAVBAR end <<<< *****************/
-
+    /**************** >>>> NAVBAR end <<<< *****************/
   );
 };
 

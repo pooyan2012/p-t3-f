@@ -3,21 +3,21 @@ import React, { useState, useEffect } from "react";
 const Footer = () => {
   return (
     /**************** >>>> Footer start <<<< *****************/
-    <div class="footer-sec">
-      <div class="footer">
-        <div class="footer-blocks">
-          <div class="footer-titles">تک</div>
-          <div class="footer-titles footer-sublinks">تماس با ما</div>
-          <div class="footer-titles footer-sublinks">درباره ما</div>
-          <div class="footer-titles footer-sublinks">تبلیغات</div>
-          <div class="footer-titles footer-sublinks">تگ ها</div>
+    <div className="footer-sec">
+      <div className="footer">
+        <div className="footer-blocks">
+          <div className="footer-titles">تک</div>
+          <div className="footer-titles footer-sublinks">تماس با ما</div>
+          <div className="footer-titles footer-sublinks">درباره ما</div>
+          <div className="footer-titles footer-sublinks">تبلیغات</div>
+          <div className="footer-titles footer-sublinks">تگ ها</div>
         </div>
-        <div class="footer-blocks">
-          <div class="footer-titles">عضویت در خبرنامه</div>
+        <div className="footer-blocks">
+          <div className="footer-titles">عضویت در خبرنامه</div>
         </div>
-        <div class="footer-blocks">
-          <div class="footer-titles">تگ ها</div>
-          <div class="footer-texts footer-tags">
+        <div className="footer-blocks">
+          <div className="footer-titles">تگ ها</div>
+          <div className="footer-texts footer-tags">
             گوشی های میان رده 2019, بهترین گوشی های هوشمند 2020, بهترین گوشی های
             سامسونگ 2019, بهترین گوشی های هواوی 2019, بهترین گوشی های شیائومی
             2019, بهترین گوشی های ال جی 2019, مگان 2018, آموزش اسنپ چت, پرفروش
@@ -29,9 +29,9 @@ const Footer = () => {
             فنی اسپورتیج, مشخصات فنی بوگاتی شیرون
           </div>
         </div>
-        <div class="footer-blocks">
-          <div class="footer-titles">درباره ما</div>
-          <div class="footer-texts">
+        <div className="footer-blocks">
+          <div className="footer-titles">درباره ما</div>
+          <div className="footer-texts">
             از همان ابتدا سعی کردیم تا در کنار اطلاعات صحیح و کاملی که در اختیار
             مخاطبمان قرار می‌دهیم، زوایای مختلف دنیای تکنولوژی را تا حد امکان
             بیشتر کنکاش کنیم، پس علاوه بر گوشی‌های هوشمند و گجت‌ های مختلف

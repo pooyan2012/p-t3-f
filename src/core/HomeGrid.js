@@ -4,9 +4,9 @@ import HomeGridSingle from "./HomeGridSingle";
 const HomeGrid = () => {
   return (
     /**************** >>>> HomeGrid start <<<< *****************/
-    <div class="hero-grid-sec">
-      <div class="hero-grid-div">
-        <div class="w-layout-grid grid">
+    <div className="hero-grid-sec">
+      <div className="hero-grid-div">
+        <div className="w-layout-grid grid">
           <HomeGridSingle
             divId="w-node-798c62728e47-129571b5"
             divStyleName="top-big-div"
@@ -32,63 +32,63 @@ const HomeGrid = () => {
             title="تحولات سازمانی در فولکس واگن؛ از حفظ لامبورگینی و دوکاتی تا
             واگذاری مدیریت بن"
           />
-          <div id="w-node-0ea76eb99c35-129571b5" class="second-row-big-div">
-            <div class="top-div">
-              <div class="top-big-div-cat second-row-big-div-cat">
+          <div id="w-node-0ea76eb99c35-129571b5" className="second-row-big-div">
+            <div className="top-div">
+              <div className="top-big-div-cat second-row-big-div-cat">
                 نرم افزار
               </div>
-              <div class="top-big-div-font second-row-big-div-font">
+              <div className="top-big-div-font second-row-big-div-font">
                 امنیت به زبان ساده: تکنولوژی تشخیص چهره چه مزایا و معایبی دارد؟
               </div>
             </div>
-            <div class="bottom-div">
-              <div class="inner-div">
-                <div class="inside-div">
-                  <div class="hero-text-div">
-                    <div class="title-small">
+            <div className="bottom-div">
+              <div className="inner-div">
+                <div className="inside-div">
+                  <div className="hero-text-div">
+                    <div className="title-small">
                       اولین کلیسای جامع مسیحیت جهان کجاست؟
                     </div>
-                    <div class="hero-writer-text">
+                    <div className="hero-writer-text">
                       پویان عسگرپور | ۱۰ دی ۹۹، ۱۲:۳۶
                     </div>
                   </div>
-                  <div class="hero-pic-div"></div>
+                  <div className="hero-pic-div"></div>
                 </div>
-                <div class="inside-div">
-                  <div class="hero-text-div">
-                    <div class="title-small">
+                <div className="inside-div">
+                  <div className="hero-text-div">
+                    <div className="title-small">
                       نسل بعدی ایرپاد می‌تواند کنترل دستگاه‌ها را با ضربه زدن به
                       بدن فراهم می‌کند
                     </div>
-                    <div class="hero-writer-text">
+                    <div className="hero-writer-text">
                       پویان عسگرپور | ۱۰ دی ۹۹، ۱۲:۳۶
                     </div>
                   </div>
-                  <div class="hero-pic-div"></div>
+                  <div className="hero-pic-div"></div>
                 </div>
-                <div class="inside-div">
-                  <div class="hero-text-div">
-                    <div class="title-small">
+                <div className="inside-div">
+                  <div className="hero-text-div">
+                    <div className="title-small">
                       امنیت به زبان ساده: تکنولوژی تشخیص چهره چه مزایا و معایبی
                       دارد؟
                     </div>
-                    <div class="hero-writer-text">
+                    <div className="hero-writer-text">
                       پویان عسگرپور | ۱۰ دی ۹۹، ۱۲:۳۶
                     </div>
                   </div>
-                  <div class="hero-pic-div"></div>
+                  <div className="hero-pic-div"></div>
                 </div>
-                <div class="inside-div">
-                  <div class="hero-text-div">
-                    <div class="title-small">
+                <div className="inside-div">
+                  <div className="hero-text-div">
+                    <div className="title-small">
                       اینتل چگونه به‌کمک ویروس کرونا توانست ظرفیت تولید تراشه را
                       افزایش دهد؟
                     </div>
-                    <div class="hero-writer-text">
+                    <div className="hero-writer-text">
                       پویان عسگرپور | ۱۰ دی ۹۹، ۱۲:۳۶
                     </div>
                   </div>
-                  <div class="hero-pic-div"></div>
+                  <div className="hero-pic-div"></div>
                 </div>
               </div>
             </div>
