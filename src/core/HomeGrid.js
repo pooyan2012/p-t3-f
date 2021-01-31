@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import HomeGridSingle from "./HomeGridSingle";
+import HomeSubGrid from "./HomeSubGrid";
 
 const HomeGrid = () => {
   return (
@@ -32,67 +33,8 @@ const HomeGrid = () => {
             title="تحولات سازمانی در فولکس واگن؛ از حفظ لامبورگینی و دوکاتی تا
             واگذاری مدیریت بن"
           />
-          <div id="w-node-0ea76eb99c35-129571b5" className="second-row-big-div">
-            <div className="top-div">
-              <div className="top-big-div-cat second-row-big-div-cat">
-                نرم افزار
-              </div>
-              <div className="top-big-div-font second-row-big-div-font">
-                امنیت به زبان ساده: تکنولوژی تشخیص چهره چه مزایا و معایبی دارد؟
-              </div>
-            </div>
-            <div className="bottom-div">
-              <div className="inner-div">
-                <div className="inside-div">
-                  <div className="hero-text-div">
-                    <div className="title-small">
-                      اولین کلیسای جامع مسیحیت جهان کجاست؟
-                    </div>
-                    <div className="hero-writer-text">
-                      پویان عسگرپور | ۱۰ دی ۹۹، ۱۲:۳۶
-                    </div>
-                  </div>
-                  <div className="hero-pic-div"></div>
-                </div>
-                <div className="inside-div">
-                  <div className="hero-text-div">
-                    <div className="title-small">
-                      نسل بعدی ایرپاد می‌تواند کنترل دستگاه‌ها را با ضربه زدن به
-                      بدن فراهم می‌کند
-                    </div>
-                    <div className="hero-writer-text">
-                      پویان عسگرپور | ۱۰ دی ۹۹، ۱۲:۳۶
-                    </div>
-                  </div>
-                  <div className="hero-pic-div"></div>
-                </div>
-                <div className="inside-div">
-                  <div className="hero-text-div">
-                    <div className="title-small">
-                      امنیت به زبان ساده: تکنولوژی تشخیص چهره چه مزایا و معایبی
-                      دارد؟
-                    </div>
-                    <div className="hero-writer-text">
-                      پویان عسگرپور | ۱۰ دی ۹۹، ۱۲:۳۶
-                    </div>
-                  </div>
-                  <div className="hero-pic-div"></div>
-                </div>
-                <div className="inside-div">
-                  <div className="hero-text-div">
-                    <div className="title-small">
-                      اینتل چگونه به‌کمک ویروس کرونا توانست ظرفیت تولید تراشه را
-                      افزایش دهد؟
-                    </div>
-                    <div className="hero-writer-text">
-                      پویان عسگرپور | ۱۰ دی ۹۹، ۱۲:۳۶
-                    </div>
-                  </div>
-                  <div className="hero-pic-div"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <HomeSubGrid />
 
           <HomeGridSingle
             divId="w-node-e228048e7a04-129571b5"
