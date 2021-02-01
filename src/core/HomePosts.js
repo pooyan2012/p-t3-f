@@ -10,6 +10,7 @@ const HomePosts = () => {
         <div className="section-title">جدیدترین مطالب</div>
         <div className="posts-div">
           <HomeSinglePost
+            singlePostBgImage="https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/5ff98963e1772678231645c9_Rectangle%2094.jpg"
             title="موشکافی داستان فیلم Tenet کریستوفر نولان"
             desc="به ‌دنبال ظهور واریانت جدید ویروس کرونا در بریتانیا که پروتئین اسپایک
           آن جهش پیدا کرده است، نگرانی‌هایی در مورد ایجاد مقاومت در برابر واکسن

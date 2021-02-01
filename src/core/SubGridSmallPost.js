@@ -7,7 +7,12 @@ const SubGridSmallPost = (props) => {
         <div className="title-small">{props.title}</div>
         <div className="hero-writer-text">{props.authorDate}</div>
       </div>
-      <div className="hero-pic-div"></div>
+      <div
+        className="hero-pic-div"
+        style={{
+          backgroundImage: `url(${props.subGridImage})`,
+        }}
+      ></div>
     </div>
   );
 };

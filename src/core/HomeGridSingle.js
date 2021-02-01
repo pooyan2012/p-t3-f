@@ -5,6 +5,9 @@ const HomeGridSingle = (props) => {
     <div
       id={`${props.divId}`}
       className={`${props.divStyleName} box-shadow`}
+      style={{
+        backgroundImage: `url(${props.gridImage})`,
+      }}
     >
       <div className={`${props.catStyleName}`}>{props.cat}</div>
       <div className={`${props.titleStyleName}`}>{props.title}</div>
