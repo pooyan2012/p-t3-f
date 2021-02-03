@@ -7,7 +7,7 @@ const SubGridBigPost = (props) => {
       style={{
         backgroundImage: `url(${props.subGridBigImage})`,
       }}
-    >
+    >-
       <div className="top-big-div-cat second-row-big-div-cat">
         {props.subBigDivCat}
       </div>

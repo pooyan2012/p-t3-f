@@ -1,3 +1,5 @@
+
+
 .nav-div-categories {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22,9 +24,39 @@
 }
 
 .nav-cat-text {
-  margin-left: 0.2vw;
+  margin-left: 10px;
   font-family: iranyekanwebbold, sans-serif;
   font-size: 13px;
   line-height: 15px;
   text-align: left;
+}
+
+.nav-cat-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  width: auto;
+  margin-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.nav-cat-dropdown-icon {
+  width: 5px;
+  height: 5px;
 }

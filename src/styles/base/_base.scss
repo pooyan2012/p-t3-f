@@ -1,8 +1,25 @@
 .body {
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color: #faf9f9;
-    font-family: iranyekanwebregular, sans-serif;
-    color: #f4f4f4;
-    font-size: 16px;
-  }
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #faf9f9;
+  font-family: iranyekanwebregular, sans-serif;
+  color: #f4f4f4;
+  font-size: 16px;
+}
+
+.section-title {
+  position: static;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  font-family: iranyekanwebextrabold, sans-serif;
+  color: #393939;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: right;
+  text-indent: 0px;
+}
+
+.after-posts-sec {
+  margin-top: 30px;
+}

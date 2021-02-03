@@ -1,0 +1,103 @@
+.posts-sec {
+  margin-top: 30px;
+}
+
+.posts-parent-div {
+  width: auto;
+  height: auto;
+  max-width: 1260px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  box-shadow: 0 5px 9px -4px #757373;
+}
+
+.posts-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.single-post {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 49.5%;
+  height: 300px;
+  margin-bottom: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 1px solid #f4f4f4;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.single-post-top {
+  height: 60%;
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.single-post-bottom {
+  height: 40%;
+}
+
+.title {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  direction: rtl;
+  font-family: iranyekanwebextraboldfanum, sans-serif;
+  color: #393939;
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 400;
+  text-align: right;
+}
+
+.writer {
+  margin-right: 10px;
+  padding-bottom: 5px;
+  direction: rtl;
+  font-family: iranyekanwebregular, sans-serif;
+  color: #b9b9b9;
+  font-size: 10px;
+  line-height: 100%;
+  text-align: right;
+  text-decoration: none;
+}
+
+.desc {
+  margin-top: 10px;
+  margin-right: 10px;
+  float: none;
+  direction: rtl;
+  color: #393939;
+  font-size: 11px;
+  line-height: 175%;
+  text-align: right;
+}
