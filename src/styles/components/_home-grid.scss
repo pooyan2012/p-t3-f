@@ -34,7 +34,7 @@
 }
 
 .hero-grid-sec {
-  margin-top: 50px;
+  margin-top: $hero-grid-sec-top-margin;
   font-size: 14px;
 }
 
@@ -63,7 +63,7 @@
 .top-big-div.box-shadow {
   height: 400px;
   max-height: none;
-  box-shadow: 0 5px 9px -4px #757373;
+  box-shadow: $all-box-shadows;
 }
 
 .top-right-small-div {
@@ -72,7 +72,7 @@
   border: 0px dotted #000;
   background-position: 0px 0px;
   background-size: cover;
-  box-shadow: 0 5px 9px -4px #757373;
+  box-shadow: $all-box-shadows;
 }
 
 .second-row-medium-div {
@@ -82,7 +82,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  box-shadow: 0 5px 9px -4px #757373;
+  box-shadow: $all-box-shadows;
 }
 
 .last-row-small-div {
@@ -91,7 +91,7 @@
   background-image: url("https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/5ff5c311fdb5c8c8bd786570_photo-1483478550801-ceba5fe50e8e.jpg");
   background-position: 0px 0px;
   background-size: cover;
-  box-shadow: 0 5px 9px -4px #757373;
+  box-shadow: $all-box-shadows;
 }
 
 #w-node-798c62728e47-129571b5 {
@@ -173,16 +173,15 @@
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  border: 1px none #000;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
   direction: rtl;
   font-family: iranyekanwebbold, sans-serif;
-  color: #fff;
+  color: $grids-title-color;
   font-size: 24px;
   line-height: 150%;
   text-align: center;
-  text-shadow: 1px 1px 4px #000;
+  text-shadow: $big-divs-text-shadow;
   white-space: normal;
 }
 
@@ -204,12 +203,12 @@
   justify-content: center;
   direction: rtl;
   font-family: iranyekanwebbold, sans-serif;
-  color: #fff;
+  color: $grids-title-color;
   font-size: 15px;
   line-height: 150%;
   font-weight: 700;
   text-align: center;
-  text-shadow: 1px 1px 4px #000;
+  text-shadow: $big-divs-text-shadow;
 }
 
 .top-small-div-font.second-row-medium-div-font {
@@ -230,11 +229,11 @@
   padding-right: 10px;
   direction: rtl;
   font-family: iranyekanwebbold, sans-serif;
-  color: #fff;
+  color: $grids-title-color;
   font-size: 12px;
   line-height: 150%;
   text-align: right;
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: $big-divs-text-shadow;
 }
 
 .top-small-div-cat {
@@ -245,11 +244,11 @@
   padding-right: 10px;
   direction: rtl;
   font-family: iranyekanwebbold, sans-serif;
-  color: #fff;
+  color: $grids-title-color;
   font-size: 12px;
   line-height: 150%;
   text-align: right;
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: $big-divs-text-shadow;
 }
 
 .top-small-div-cat.last-row-smal-div-cat {
@@ -267,11 +266,11 @@
   clear: none;
   direction: rtl;
   font-family: iranyekanwebbold, sans-serif;
-  color: #fff;
+  color: $grids-title-color;
   font-size: 12px;
   line-height: 150%;
   text-align: right;
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: $big-divs-text-shadow;
 }
 
 .bottom-div {
@@ -285,7 +284,7 @@
   -ms-flex-align: center;
   align-items: center;
   background-color: #fff;
-  box-shadow: 0 5px 9px -4px #757373;
+  box-shadow: $all-box-shadows;
 }
 
 .top-div {
@@ -372,44 +371,43 @@
 }
 
 .hero-text-div {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 70%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    text-align: right;
-  }
-  
-  .hero-pic-div {
-    width: 30%;
-    height: 100%;
-    background-position: 0px 0px;
-    background-size: cover;
-  }
-  
-  .title-small {
-    margin-right: 4%;
-    direction: rtl;
-    font-family: iranyekanwebbold, sans-serif;
-    color: #393939;
-    font-size: 13px;
-    line-height: 150%;
-    font-weight: 700;
-  }
-  
-  .hero-writer-text {
-    margin-right: 4%;
-    direction: rtl;
-    color: #b9b9b9;
-    font-size: 11px;
-    line-height: 2.5vh;
-  }
-  
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  text-align: right;
+}
+
+.hero-pic-div {
+  width: 30%;
+  height: 100%;
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.title-small {
+  margin-right: 4%;
+  direction: rtl;
+  font-family: iranyekanwebbold, sans-serif;
+  color: $site-black;
+  font-size: 13px;
+  line-height: 150%;
+  font-weight: 700;
+}
+
+.hero-writer-text {
+  margin-right: 4%;
+  direction: rtl;
+  color: $writer-date-text-color;
+  font-size: 11px;
+  line-height: 2.5vh;
+}
