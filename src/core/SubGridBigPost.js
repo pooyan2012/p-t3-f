@@ -1,4 +1,5 @@
 import React from "react";
+import HomeLikeCmRate from "./HomeLikeCmRate";
 
 const SubGridBigPost = (props) => {
   return (
@@ -13,6 +14,9 @@ const SubGridBigPost = (props) => {
       </div>
       <div className="top-big-div-font second-row-big-div-font">
         {props.subBigDivTitle}
+      </div>
+      <div className="info-div">
+        <HomeLikeCmRate />
       </div>
     </div>
   );
