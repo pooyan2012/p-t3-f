@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import ReactModal from "react-modal";
 import ReactDOM from "react-dom";
 
-//ReactModal.setAppElement("#search-modal");
+ReactModal.setAppElement("#search-modal");
 
 class SearchModal extends React.Component {
   /*constructor() {
@@ -26,15 +26,7 @@ class SearchModal extends React.Component {
   handleCloseModal = () => {
     this.setState({ showModal: false });
   };
-  //<button onClick={this.handleOpenModal}>Trigger Modal</button>
-  /*<input
-          onClick={this.handleOpenModal}
-          type="image"
-          src="https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/5ffea0198d5cbf052c0adc05_search-ico.svg"
-          name="submit"
-          className="search-icon"
-          alt="submit"
-        />*/
+
   render() {
     return (
       <Fragment>
@@ -52,9 +44,13 @@ class SearchModal extends React.Component {
           onRequestClose={this.handleCloseModal}
           className="Modal"
           overlayClassName="Overlay"
+          preventScroll={true}
         >
           <p className="search-modal-title">جستوجو در سایت</p>
-          <button onClick={this.handleCloseModal} className="search-close-btn">
+          <button
+            onClick={this.handleCloseModal}
+            className="search-modal-close-btn"
+          >
             Close Modal
           </button>
         </ReactModal>

@@ -1,10 +1,10 @@
 .Modal {
   position: absolute;
   z-index: 1002;
-  top: 40px;
-  left: 40px;
-  right: 40px;
-  bottom: 40px;
+  top: 30px;
+  left: 50px;
+  right: 50px;
+  bottom: 100px;
   background-color: #f4f4f4;
 }
 
@@ -16,4 +16,25 @@
   right: 0;
   bottom: 0;
   background-color: rgba(196, 196, 196, $alpha: 0.5);
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.search-modal-close-btn {
+  color: black;
+}
+
+.search-modal-title {
+  color: black;
 }
