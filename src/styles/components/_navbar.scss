@@ -87,6 +87,15 @@
   flex: 0 auto;
 }
 
+#search-btn {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
 .logo {
   position: static;
   margin-right: 5px;
