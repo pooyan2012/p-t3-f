@@ -44,7 +44,6 @@ class SearchModal extends React.Component {
           onRequestClose={this.handleCloseModal}
           className="Modal"
           overlayClassName="Overlay"
-          preventScroll={true}
         >
           <p className="search-modal-title">جستوجو در سایت</p>
           <button

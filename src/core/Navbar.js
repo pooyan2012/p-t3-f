@@ -1,6 +1,7 @@
 import React from "react";
 import NavCats from "./NavCats";
 import SearchModal from "./SearchModal";
+import UserModal from "./UserModal";
 
 const Navbar = () => {
   /*const [productsBySell, setProductsBySell] = useState([]);
@@ -61,6 +62,13 @@ const Navbar = () => {
               alt=""
               className="search-icon"
             />
+
+            <img
+              src="https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/5ffea0190775a5438bf5fea3_user-ico.svg"
+              loading="lazy"
+              alt=""
+              className="user-icon"
+            />
     */
 
     /**************** >>>> NAVBAR start <<<< *****************/
@@ -68,12 +76,7 @@ const Navbar = () => {
       <div className="nav-parent-div">
         <div className="nav-child">
           <div className="nav-div-icons">
-            <img
-              src="https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/5ffea0190775a5438bf5fea3_user-ico.svg"
-              loading="lazy"
-              alt=""
-              className="user-icon"
-            />
+            <UserModal className="user-icon" />
             <SearchModal className="search-icon" />
           </div>
 
