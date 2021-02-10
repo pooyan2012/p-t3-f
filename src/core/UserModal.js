@@ -5,16 +5,6 @@ import ReactDOM from "react-dom";
 ReactModal.setAppElement("#user-modal");
 
 class UserModal extends React.Component {
-  /*constructor() {
-    super();
-    this.state = {
-      showModal: false,
-    };
-
-    this.handleOpenModal = this.handleOpenModal.bind(this);
-    this.handleCloseModal = this.handleCloseModal.bind(this);
-  }*/
-
   state = {
     showModal: false,
   };
