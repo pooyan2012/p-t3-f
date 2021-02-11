@@ -4,9 +4,10 @@
   margin-right: auto;
   margin-left: auto;
   top: 20%;
-  width: 300px;
+  width: 350px;
   height: auto;
-  background-color: #ed8585;
+  height: auto;
+  background-color: #fff;
 }
 
 .user-overlay {
@@ -31,9 +32,166 @@
 }
 /*===============*/
 .user-modal-close-btn {
-  color: black;
+  background-color: transparent;
 }
 
 .user-modal-title {
   color: black;
 }
+/******************* register-modal start *******************/
+.register-modal {
+  width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.register-modal-closebtn {
+  padding-top: 5px;
+  padding-right: 5px;
+  text-align: right;
+}
+
+.register-modal-closebtn-div {
+  display: block;
+  direction: rtl;
+}
+
+.register-modal-header {
+  direction: rtl;
+  font-family: iranyekanwebmedium, sans-serif;
+  color: #393939;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.register-modal-registration-q {
+  font-family: iranyekanwebregular, sans-serif;
+  color: #393939;
+  font-size: 11px;
+  text-align: center;
+}
+
+.register-modal-registration-a {
+  padding-right: 3px;
+  font-family: iranyekanwebregular, sans-serif;
+  color: #4796ff;
+  font-size: 11px;
+}
+
+.register-modal-registration-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  margin-top: 3px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.register-modal-form-div {
+  width: 306px;
+  margin-top: 35px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.register-modal-form {
+  background-color: #fff;
+}
+
+.register-modal-name-lname-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.register-modal-name-input {
+  width: 150px;
+  border: 1px solid #bcbcbc;
+  border-radius: 0px 4px 4px 0px;
+  background-color: #f8f8f8;
+  direction: rtl;
+  font-family: iranyekanwebregular, sans-serif;
+  font-size: 11px;
+  color: $site-black;
+}
+
+.register-modal-lname-input {
+  width: 150px;
+  border: 1px solid #bcbcbc;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #f8f8f8;
+  direction: rtl;
+  font-family: iranyekanwebregular, sans-serif;
+  font-size: 11px;
+  color: $site-black;
+}
+
+.register-modal-password-input {
+  border: 1px solid #bcbcbc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  direction: rtl;
+  font-family: iranyekanwebregular, sans-serif;
+  color: $site-black;
+  font-size: 11px;
+}
+
+.register-modal-rules-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  direction: ltr;
+  text-align: right;
+}
+
+.register-modal-rules-link {
+  padding-right: 3px;
+  font-family: iranyekanwebregular, sans-serif;
+  color: #4796ff;
+  font-size: 11px;
+}
+
+.register-modal-rules-text {
+  padding-right: 3px;
+  font-family: iranyekanwebregular, sans-serif;
+  color: #393939;
+  font-size: 11px;
+}
+
+.register-modal-btn {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #4796ff;
+  border-color: #4796ff;
+  border: 1px;
+  font-family: iranyekanwebregular, sans-serif;
+  text-align: center;
+}
+/******************* register-modal end *******************/
