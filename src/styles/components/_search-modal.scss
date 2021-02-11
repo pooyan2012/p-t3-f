@@ -2,10 +2,10 @@
   position: absolute;
   z-index: 1002;
   top: 30px;
-  left: 50px;
-  right: 50px;
-  bottom: 100px;
-  background-color: #f4f4f4;
+  left: 200px;
+  right: 200px;
+  min-height: 60%;
+  background-color: #fff;
 }
 
 .Overlay {
@@ -30,11 +30,165 @@
 .ReactModal__Overlay--before-close {
   opacity: 0;
 }
-
 .search-modal-close-btn {
-  color: black;
+  background-color: transparent;
 }
 
-.search-modal-title {
-  color: black;
+.pagination.search-modal-pagination {
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.search-modal-parent-div {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.search-modal-closebtn-div {
+  display: block;
+  width: auto;
+}
+
+.modal-closebtn {
+  display: block;
+  max-width: none;
+  padding-top: 15px;
+  padding-right: 15px;
+  float: right;
+  clear: both;
+}
+
+.search-modal-searchbar {
+  position: static;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: 0%;
+  display: block;
+}
+
+.form {
+  position: static;
+  display: block;
+  float: none;
+  clear: none;
+  direction: rtl;
+  font-family: iranyekanwebmedium, sans-serif;
+}
+
+.text-field {
+  position: relative;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  float: none;
+  border: 1px solid #bcbcbc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-family: iranyekanwebmedium, sans-serif;
+}
+
+.form-block {
+  margin-bottom: 0px;
+}
+
+.closebtn-sec {
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.searchbar-sec {
+  position: static;
+  display: block;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+.search-btn {
+  position: absolute;
+  left: 0.1%;
+  top: auto;
+  right: auto;
+  bottom: 0%;
+  display: inline-block;
+  width: 38px;
+  height: 37px;
+  margin-right: auto;
+  margin-left: auto;
+  float: left;
+  clear: none;
+  border: 1px solid #4796ff;
+  border-radius: 4px 0px 0px 4px;
+  background-color: #4796ff;
+  background-image: url("https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/602432c5865ddf6fb382960d_search-black.svg");
+  background-position: 50% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  color: #4796ff;
+  font-size: 0px;
+  text-decoration: none;
+  text-transform: none;
+  white-space: normal;
+}
+
+.form-block-2 {
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.search-result-sec {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.search-pagination-sec {
+  width: 80%;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.result-div {
+  margin-top: 40px;
+}
+
+.search-result-title {
+  color: $site-black;
+  font-family: iranyekanwebbold, sans-serif;
+  font-size: 14px;
+}
+
+.search-result-desc {
+  color: $site-black;
+  margin-top: 5px;
+  font-family: iranyekanwebregular, sans-serif;
+  font-size: 13px;
+}
+
+.single-search-result {
+  margin-bottom: 15px;
+  float: none;
+  direction: rtl;
+}
+
+.search-modal-closebtn-div {
+  float: right;
 }
