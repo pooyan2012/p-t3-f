@@ -2,12 +2,14 @@ import React, { Fragment } from "react";
 import ReactModal from "react-modal";
 import ReactDOM from "react-dom";
 import RegisterForm from "./RegisterForm";
+import LoginForm from "./LoginForm";
 
 ReactModal.setAppElement("#user-modal");
 
 class UserModal extends React.Component {
   state = {
     showModal: false,
+    switchForm: 0,
   };
 
   handleOpenModal = () => {
@@ -18,6 +20,14 @@ class UserModal extends React.Component {
     this.setState({ showModal: false });
   };
 
+  handleLoginRegisterForm = () => {
+    this.setState((prevState) => {
+      return {
+        switchForm: prevState.switchForm === 0 ? 1 : 0,
+      };
+    });
+  };
+
   /*<p className="user-modal-title">ورود/عضویت</p>
           <button
             onClick={this.handleCloseModal}
@@ -25,7 +35,16 @@ class UserModal extends React.Component {
           >
             X
           </button>
-          */
+
+
+          handleLoginRegisterForm = () => {
+    this.setState((prevState, prevProps) => {
+      return {
+        switchForm: prevState === 0 ? 1 : 0,
+      };
+    });
+  };
+  */
 
   render() {
     return (
@@ -45,7 +64,7 @@ class UserModal extends React.Component {
           className="user-modal"
           overlayClassName="user-overlay"
         >
-          <div class="register-modal-closebtn-div">
+          <div className="register-modal-closebtn-div">
             <button
               onClick={this.handleCloseModal}
               className="user-modal-close-btn"
@@ -54,11 +73,16 @@ class UserModal extends React.Component {
                 src="https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/6024e1a9859c6f637343d6d1_close-btn-small.svg"
                 loading="lazy"
                 alt=""
-                class="register-modal-closebtn"
+                className="register-modal-closebtn"
               />
             </button>
           </div>
-          <RegisterForm />
+
+          {this.state.switchForm === 0 ? (
+            <LoginForm clickHandler={this.handleLoginRegisterForm} />
+          ) : (
+            <RegisterForm clickHandler={this.handleLoginRegisterForm} />
+          )}
         </ReactModal>
       </Fragment>
     );

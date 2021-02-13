@@ -33,6 +33,7 @@
 /*===============*/
 .user-modal-close-btn {
   background-color: transparent;
+  padding: 0%;
 }
 
 .user-modal-title {
@@ -195,3 +196,139 @@
   text-align: center;
 }
 /******************* register-modal end *******************/
+
+/******************* login-modal start *******************/
+.login-modal {
+  width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login-modal-closebtn {
+  padding-top: 5px;
+  padding-right: 5px;
+  text-align: right;
+}
+
+.login-modal-closebtn-div {
+  display: block;
+  direction: rtl;
+}
+
+.login-modal-header {
+  direction: rtl;
+  font-family: iranyekanwebmedium, sans-serif;
+  color: #393939;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.login-modal-registration-q {
+  font-family: iranyekanwebregular, sans-serif;
+  color: #393939;
+  font-size: 11px;
+  text-align: center;
+}
+
+.login-modal-registration-a {
+  padding-right: 3px;
+  font-family: iranyekanwebregular, sans-serif;
+  color: #4796ff;
+  font-size: 11px;
+}
+
+.login-modal-registration-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  margin-top: 3px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.login-modal-form-div {
+  width: 306px;
+  margin-top: 55px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login-modal-form {
+  background-color: #fff;
+}
+
+.login-modal-password-input {
+  border: 1px solid #bcbcbc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  direction: rtl;
+  font-family: iranyekanwebregular, sans-serif;
+  color: #bcbcbc;
+  font-size: 11px;
+}
+
+.login-modal-rules-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  direction: rtl;
+  text-align: right;
+}
+
+.login-modal-remember-me-text {
+  padding-right: 3px;
+  font-family: iranyekanwebregular, sans-serif;
+  color: #393939;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.login-modal-btn {
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #4796ff;
+  font-family: iranyekanwebregular, sans-serif;
+  text-align: center;
+}
+
+.login-modal-remember-me-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  direction: ltr;
+}
+
+.login-modal-pass-forgotten-text {
+  direction: rtl;
+  font-family: iranyekanwebregular, sans-serif;
+  color: #4796ff;
+  font-size: 11px;
+  text-align: right;
+}
+/******************* login-modal end *******************/
