@@ -73,17 +73,19 @@
 .user-icon {
   margin-top: auto;
   margin-bottom: auto;
+  padding: 0%;
 }
 
 .search-icon {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 5px;
-  padding-left: 0px;
+  padding: 0 ;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
+
 }
 
 #search-btn {

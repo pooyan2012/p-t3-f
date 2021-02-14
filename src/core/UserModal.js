@@ -49,7 +49,11 @@ class UserModal extends React.Component {
   render() {
     return (
       <Fragment>
-        <button onClick={this.handleOpenModal} id="user-btn">
+        <button
+          onClick={this.handleOpenModal}
+          className="user-icon"
+          id="user-btn"
+        >
           <img
             src="https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/5ffea0190775a5438bf5fea3_user-ico.svg"
             loading="lazy"

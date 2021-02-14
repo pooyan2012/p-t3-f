@@ -39,7 +39,11 @@ class SearchModal extends React.Component {
   render() {
     return (
       <Fragment>
-        <button onClick={this.handleOpenModal} id="search-btn">
+        <button
+          onClick={this.handleOpenModal}
+          className="search-icon"
+          id="search-btn"
+        >
           <img
             src="https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/5ffea0198d5cbf052c0adc05_search-ico.svg"
             loading="lazy"
