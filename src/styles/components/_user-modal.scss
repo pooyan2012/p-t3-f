@@ -8,6 +8,7 @@
   height: auto;
   height: auto;
   background-color: #fff;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .user-overlay {
@@ -19,6 +20,7 @@
   bottom: 0;
   background-color: rgba(196, 196, 196, $alpha: 0.5);
 }
+
 /*===============*/
 .ReactModal__Overlay {
   opacity: 0;
@@ -34,6 +36,8 @@
 .user-modal-close-btn {
   background-color: transparent;
   padding: 0%;
+
+  outline: none; /* for disapearing modal black border*/
 }
 
 .user-modal-title {
@@ -50,11 +54,13 @@
   padding-top: 5px;
   padding-right: 5px;
   text-align: right;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .register-modal-closebtn-div {
   display: block;
   direction: rtl;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .register-modal-header {
@@ -194,6 +200,7 @@
   border: 1px;
   font-family: iranyekanwebregular, sans-serif;
   text-align: center;
+  outline: none; /* for disapearing modal black border*/
 }
 /******************* register-modal end *******************/
 
@@ -208,11 +215,13 @@
   padding-top: 5px;
   padding-right: 5px;
   text-align: right;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .login-modal-closebtn-div {
   display: block;
   direction: rtl;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .login-modal-header {
@@ -310,6 +319,7 @@
   background-color: #4796ff;
   font-family: iranyekanwebregular, sans-serif;
   text-align: center;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .login-modal-remember-me-div {
@@ -338,12 +348,14 @@
   padding-top: 5px;
   padding-right: 5px;
   text-align: right;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .profile-modal-closebtn-div {
   display: block;
   direction: rtl;
   line-height: 0px;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .profile-modal-greeting {
@@ -384,6 +396,7 @@
   background-color: #e10000;
   font-family: iranyekanwebregular, sans-serif;
   text-align: center;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .profile-modal-pic {

@@ -6,6 +6,7 @@
   right: 200px;
   min-height: 60%;
   background-color: #fff;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .Overlay {
@@ -32,6 +33,7 @@
 }
 .search-modal-close-btn {
   background-color: transparent;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .pagination.search-modal-pagination {
@@ -51,6 +53,7 @@
 .search-modal-closebtn-div {
   display: block;
   width: auto;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .modal-closebtn {
@@ -60,6 +63,7 @@
   padding-right: 15px;
   float: right;
   clear: both;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .search-modal-searchbar {
@@ -106,6 +110,7 @@
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .searchbar-sec {
@@ -145,6 +150,7 @@
   text-decoration: none;
   text-transform: none;
   white-space: normal;
+  outline: none; /* for disapearing modal black border*/
 }
 
 .form-block-2 {
@@ -191,4 +197,5 @@
 
 .search-modal-closebtn-div {
   float: right;
+  outline: none; /* for disapearing modal black border*/
 }
