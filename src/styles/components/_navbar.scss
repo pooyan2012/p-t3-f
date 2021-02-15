@@ -76,18 +76,22 @@
   padding: 0%;
 }
 
+/*later use it in info-div on hover effect
+.user-icon > path {
+  fill: #00ff00;
+}
+*/
+
 .search-icon {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 5px;
-  padding: 0 ;
+  padding: 0;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
-
 }
-
 #search-btn {
   background-color: Transparent;
   background-repeat: no-repeat;

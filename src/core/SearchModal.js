@@ -44,12 +44,19 @@ class SearchModal extends React.Component {
           className="search-icon"
           id="search-btn"
         >
-          <img
-            src="https://uploads-ssl.webflow.com/5ff542e0e6322e20ee9571b4/5ffea0198d5cbf052c0adc05_search-ico.svg"
-            loading="lazy"
-            alt=""
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
             className="search-icon"
-          />
+          >
+            <path
+              d="M14.2857 13.5315H13.3714L13.0286 13.1886C14.1715 11.9315 14.8572 10.2172 14.8572 8.38859C14.8571 4.27431 11.5429 0.960022 7.42857 0.960022C3.31429 0.960022 0 4.27431 0 8.38859C0 12.5029 3.31429 15.8172 7.42857 15.8172C9.25714 15.8172 10.9714 15.1315 12.2286 13.9886L12.5714 14.3314V15.2457L18.2857 20.96L20 19.2457L14.2857 13.5315ZM7.42857 13.5315C4.57143 13.5315 2.28571 11.2457 2.28571 8.38859C2.28571 5.53145 4.57143 3.24574 7.42857 3.24574C10.2857 3.24574 12.5714 5.53145 12.5714 8.38859C12.5714 11.2457 10.2857 13.5315 7.42857 13.5315Z"
+              fill="#CFCFCF"
+            />
+          </svg>
         </button>
         <ReactModal
           isOpen={this.state.showModal}
