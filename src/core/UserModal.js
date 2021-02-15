@@ -3,6 +3,7 @@ import ReactModal from "react-modal";
 import ReactDOM from "react-dom";
 import RegisterForm from "./RegisterForm";
 import LoginForm from "./LoginForm";
+import ProfileForm from "./ProfileForm";
 
 ReactModal.setAppElement("#user-modal");
 
@@ -86,6 +87,7 @@ class UserModal extends React.Component {
             <LoginForm clickHandler={this.handleLoginRegisterForm} />
           ) : (
             <RegisterForm clickHandler={this.handleLoginRegisterForm} />
+            //<ProfileForm clickHandler={this.handleLoginRegisterForm} />
           )}
         </ReactModal>
       </Fragment>

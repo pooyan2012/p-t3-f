@@ -332,3 +332,104 @@
   text-align: right;
 }
 /******************* login-modal end *******************/
+
+/******************* profile-modal start *******************/
+.profile-modal-closebtn {
+  padding-top: 5px;
+  padding-right: 5px;
+  text-align: right;
+}
+
+.profile-modal-closebtn-div {
+  display: block;
+  direction: rtl;
+  line-height: 0px;
+}
+
+.profile-modal-greeting {
+  margin-top: 0px;
+  padding-top: 5px;
+  direction: rtl;
+  font-family: iranyekanwebbold, sans-serif;
+  color: #393939;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.profile-modal-position {
+  margin-top: 5px;
+  font-family: iranyekanwebmedium, sans-serif;
+  color: #393939;
+  font-size: 15px;
+  text-align: center;
+}
+
+.profile-modal-form-div {
+  width: 306px;
+  margin-top: 55px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.profile-modal-form {
+  background-color: #fff;
+}
+
+.profile-modal-btn {
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #e10000;
+  font-family: iranyekanwebregular, sans-serif;
+  text-align: center;
+}
+
+.profile-modal-pic {
+  position: static;
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-top: -57px;
+  margin-right: auto;
+  margin-left: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #fff;
+  border-radius: 50px;
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.profile-modal-list {
+  margin-top: 20px;
+}
+
+.profile-modal-list-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  direction: ltr;
+}
+
+.profile-modal-list-item-text {
+  padding-right: 5px;
+  direction: rtl;
+  font-family: iranyekanwebregular, sans-serif;
+  color: #4796ff;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.profile-modal-list-item-img {
+  margin-right: 22px;
+}
+/******************* profile-modal end *******************/
