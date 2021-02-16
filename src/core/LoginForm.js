@@ -35,7 +35,7 @@ const LoginForm = (props) => {
                 required=""
               />
               <input
-                type="text"
+                type="password"
                 className="login-modal-password-input w-input"
                 maxLength="256"
                 name="field-4"
