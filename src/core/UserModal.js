@@ -13,15 +13,11 @@ class UserModal extends React.Component {
     switchForm: 0,
   };
 
-  handleOpenModal = () => {
-    this.setState({ showModal: true });
+  handleToggleModal = () => {
+    this.setState({ showModal: !this.state.showModal });
   };
 
-  handleCloseModal = () => {
-    this.setState({ showModal: false });
-  };
-
-  handleLoginRegisterForm = () => {
+  handleSwitchLoginRegisterForm = () => {
     this.setState((prevState) => {
       return {
         switchForm: prevState.switchForm === 0 ? 1 : 0,
@@ -29,29 +25,11 @@ class UserModal extends React.Component {
     });
   };
 
-  /*<p className="user-modal-title">ورود/عضویت</p>
-          <button
-            onClick={this.handleCloseModal}
-            className="user-modal-close-btn"
-          >
-            X
-          </button>
-
-
-          handleLoginRegisterForm = () => {
-    this.setState((prevState, prevProps) => {
-      return {
-        switchForm: prevState === 0 ? 1 : 0,
-      };
-    });
-  };
-  */
-
   render() {
     return (
       <Fragment>
         <button
-          onClick={this.handleOpenModal}
+          onClick={this.handleToggleModal}
           id="user-btn"
           className="user-icon"
         >
@@ -72,13 +50,13 @@ class UserModal extends React.Component {
         <ReactModal
           isOpen={this.state.showModal}
           contentLabel="onRequestClose Example"
-          onRequestClose={this.handleCloseModal}
+          onRequestClose={this.handleToggleModal}
           className="user-modal"
           overlayClassName="user-overlay"
         >
           <div className="register-modal-closebtn-div">
             <button
-              onClick={this.handleCloseModal}
+              onClick={this.handleToggleModal}
               className="user-modal-close-btn"
             >
               <img
@@ -91,10 +69,10 @@ class UserModal extends React.Component {
           </div>
 
           {this.state.switchForm === 0 ? (
-            <LoginForm clickHandler={this.handleLoginRegisterForm} />
+            <LoginForm clickHandler={this.handleSwitchLoginRegisterForm} />
           ) : (
-            <RegisterForm clickHandler={this.handleLoginRegisterForm} />
-            //<ProfileForm clickHandler={this.handleLoginRegisterForm} />
+            <RegisterForm clickHandler={this.handleSwitchLoginRegisterForm} />
+            //<ProfileForm clickHandler={this.handleSwitchLoginRegisterForm} />
           )}
         </ReactModal>
       </Fragment>

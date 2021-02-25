@@ -275,10 +275,17 @@
   border: 1px solid #bcbcbc;
   border-radius: 4px;
   background-color: #f8f8f8;
-  direction: rtl;
   font-family: iranyekanwebregular, sans-serif;
   color: $site-black;
   font-size: 11px;
+}
+/* webkit solution */
+.login-modal-password-input::-webkit-input-placeholder {
+  text-align: right;
+}
+/* mozilla solution */
+.login-modal-password-input:-moz-placeholder {
+  text-align: right;
 }
 
 .login-modal-rules-div {
