@@ -20,7 +20,7 @@ import Profile from "./user/Profile";*/
 const Routes = () => {
   return (
     <BrowserRouter>
-      <Route path="/" exact component={Home} />
+      <Route path="/" exact={true} component={Home} />
       
     </BrowserRouter>
   );
