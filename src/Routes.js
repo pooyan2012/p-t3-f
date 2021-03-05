@@ -20,8 +20,9 @@ import Profile from "./user/Profile";*/
 const Routes = () => {
   return (
     <BrowserRouter>
-      <Route path="/" exact={true} component={Home} />
-      
+      <Switch>
+        <Route path="/" exact={true} component={Home} />
+      </Switch>
     </BrowserRouter>
   );
 };
