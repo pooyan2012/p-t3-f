@@ -29,12 +29,12 @@ const Home = () => {
   }, []);*/
 
   return (
-    <Fragment>
+    <>
       <Navbar />
       <HomeGrid />
       <HomePosts />
       <Footer />
-    </Fragment>
+    </>
 
     /*<Layout
       title="Home Page"
