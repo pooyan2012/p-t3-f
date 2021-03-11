@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ReactModal from "react-modal";
-import ReactDOM from "react-dom";
 import RegisterForm from "./RegisterForm";
 import LoginForm from "./LoginForm";
 import ProfileForm from "./ProfileForm";
+import { connect } from "react-redux";
 
 ReactModal.setAppElement("#user-modal");
 
@@ -14,6 +14,7 @@ class UserModal extends React.Component {
   };
 
   handleToggleModal = () => {
+    console.log("==============> " + JSON.stringify(this.props.auth.user));
     this.setState({ showModal: !this.state.showModal });
   };
 
@@ -27,7 +28,7 @@ class UserModal extends React.Component {
 
   render() {
     return (
-      <Fragment>
+      <>
         <button
           onClick={this.handleToggleModal}
           id="user-btn"
@@ -43,7 +44,7 @@ class UserModal extends React.Component {
           >
             <path
               d="M10 10.96C12.75 10.96 15 8.71002 15 5.96002C15 3.21002 12.75 0.960022 10 0.960022C7.25 0.960022 5 3.21002 5 5.96002C5 8.71002 7.25 10.96 10 10.96ZM10 13.46C6.625 13.46 0 15.085 0 18.46V20.96H20V18.46C20 15.085 13.375 13.46 10 13.46Z"
-              fill={this.state.switchForm === 0 ? "#CFCFCF" : "#4796FF"}
+              fill={this.props.auth.user.user.name ? "#4796FF" : "#CFCFCF"}
             />
           </svg>
         </button>
@@ -75,16 +76,21 @@ class UserModal extends React.Component {
             //<ProfileForm clickHandler={this.handleSwitchLoginRegisterForm} />
           )}
         </ReactModal>
-      </Fragment>
+      </>
     );
   }
 }
 
+/*
 const props = {};
 
 ReactDOM.render(
   <UserModal {...props} />,
   document.getElementById("user-modal")
 );
+*/
 
-export default UserModal;
+const mapStateToProps = (state) => ({ auth: state.auth });
+
+//export default UserModal;
+export default connect(mapStateToProps)(UserModal);

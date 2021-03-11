@@ -10,7 +10,7 @@ import AddProduct from "./admin/AddProduct";
 import UpdateProduct from "./admin/UpdateProduct";
 import ManageProducts from "./admin/ManageProducts";
 import AddCategory from "./admin/AddCategory";*/
-import Home from "./core/Home";
+import Home from "../core/Home";
 /*import Shop from "./core/Shop";
 import Product from "./core/Product";
 import Cart from "./core/Cart";

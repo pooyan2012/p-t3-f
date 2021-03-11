@@ -1,10 +1,11 @@
 import React, { Fragment, useState } from "react";
-import { API } from "../config";
+import { connect } from "react-redux";
+import { startLogin } from "../states/actions/auth";
 
-const LoginForm = (props) => {
+const LoginForm = ({ startLogin, auth }) => {
   const [values, setValues] = useState({
     email: "",
-    passowrd: "",
+    password: "",
     error: "",
     success: false,
   });
@@ -16,26 +17,15 @@ const LoginForm = (props) => {
     setValues({ ...values, error: false, [name]: event.target.value });
   };
 
-  const signIn = (user) => {
-    //you can use axios library instead its better
-    return fetch(`${API}/signin`, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(user),
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    signIn({ email, password });
+    //signIn({ email, password });
+    try {
+      await startLogin({ email, password });
+      console.log("TTTTT => " + auth.user.user._id);
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   const signForm = () => (
@@ -93,7 +83,7 @@ const LoginForm = (props) => {
           <div className="login-modal-header">ورود/عضویت</div>
           <div className="login-modal-registration-div">
             <button
-              onClick={props.clickHandler}
+              //onClick={props.clickHandler}
               className="user-modal-close-btn"
             >
               <div className="login-modal-registration-a">عضو شوید</div>
@@ -113,4 +103,12 @@ const LoginForm = (props) => {
   );
 };
 
-export default LoginForm;
+const mapStateToProps = (state) => ({
+  auth: state.auth,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  startLogin: (userData) => dispatch(startLogin(userData)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoginForm);
