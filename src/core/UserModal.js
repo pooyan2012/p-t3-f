@@ -4,6 +4,7 @@ import RegisterForm from "./RegisterForm";
 import LoginForm from "./LoginForm";
 import ProfileForm from "./ProfileForm";
 import { connect } from "react-redux";
+import { RemoveShoppingCartSharp } from "@material-ui/icons";
 
 ReactModal.setAppElement("#user-modal");
 
@@ -26,6 +27,17 @@ class UserModal extends React.Component {
     });
   };
 
+  handleRendering = () => {
+    if (this.props.auth.user.user._id) {
+      return <ProfileForm />;
+    } else {
+      return this.state.switchForm === 0 ? (
+        <LoginForm clickHandler={this.handleSwitchLoginRegisterForm} />
+      ) : (
+        <RegisterForm clickHandler={this.handleSwitchLoginRegisterForm} />
+      );
+    }
+  };
   render() {
     return (
       <>
@@ -68,13 +80,7 @@ class UserModal extends React.Component {
               />
             </button>
           </div>
-
-          {this.state.switchForm === 0 ? (
-            <LoginForm clickHandler={this.handleSwitchLoginRegisterForm} />
-          ) : (
-            <RegisterForm clickHandler={this.handleSwitchLoginRegisterForm} />
-            //<ProfileForm clickHandler={this.handleSwitchLoginRegisterForm} />
-          )}
+          {this.handleRendering()}
         </ReactModal>
       </>
     );

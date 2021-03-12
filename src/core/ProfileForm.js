@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 const ProfileForm = () => {
   return (
-    <Fragment>
+    <>
       <div className="profile-modal-pic"></div>
       <div className="profile-modal-title-div">
         <div className="profile-modal-greeting">سلام پویان، خوش آمدی</div>
@@ -44,7 +44,7 @@ const ProfileForm = () => {
           <div className="error-message w-form-fail"></div>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 };
 

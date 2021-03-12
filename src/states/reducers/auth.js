@@ -5,8 +5,6 @@ const authReducerDefaultState = {
 const authReducer = (state = authReducerDefaultState, action) => {
   switch (action.type) {
     case "LOGIN":
-      //const { token = "", user = {} } = action.user;
-
       return {
         ...state,
         user: action.user,

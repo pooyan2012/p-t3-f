@@ -1,8 +1,7 @@
-import { Fragment } from "react";
 import React from "react";
 
 const HomeLikeCmRate = () => (
-  <Fragment>
+  <>
     <div className="info-subdiv">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +68,7 @@ const HomeLikeCmRate = () => (
       </svg>
       <div className="info-div-text">۷۶</div>
     </div>
-  </Fragment>
+  </>
 );
 
 export default HomeLikeCmRate;

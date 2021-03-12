@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import { startLogin } from "../states/actions/auth";
 
@@ -77,7 +77,7 @@ const LoginForm = ({ startLogin, auth }) => {
   );
 
   return (
-    <Fragment>
+    <>
       <div className="login-modal">
         <div className="login-modal-title-div">
           <div className="login-modal-header">ورود/عضویت</div>
@@ -99,7 +99,7 @@ const LoginForm = ({ startLogin, auth }) => {
           </div>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 };
 

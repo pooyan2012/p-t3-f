@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 const RegisterForm = (props) => {
   return (
-    <Fragment>
+    <>
       <div className="register-modal-title-div">
         <div className="register-modal-header">ورود/عضویت</div>
         <div className="register-modal-registration-div">
@@ -78,7 +78,7 @@ const RegisterForm = (props) => {
           <div className="error-message w-form-fail"></div>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 };
 

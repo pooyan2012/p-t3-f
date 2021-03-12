@@ -2,7 +2,7 @@ import { API } from "../../config";
 
 export const login = (user = {}) => ({
   type: "LOGIN",
-  user
+  user,
 });
 
 export const startLogin = (userData = {}) => {

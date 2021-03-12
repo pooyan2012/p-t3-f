@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ReactModal from "react-modal";
 import ReactDOM from "react-dom";
 
@@ -38,7 +38,7 @@ class SearchModal extends React.Component {
 
   render() {
     return (
-      <Fragment>
+      <>
         <button
           onClick={this.handleOpenModal}
           className="search-icon"
@@ -92,15 +92,17 @@ class SearchModal extends React.Component {
                   >
                     <input
                       type="text"
-                      class="text-field w-input"
-                      autofocus="true"
-                      maxlength="256"
+                      className="text-field w-input"
+                      autoFocus={true}
+                      maxLength="256"
                       name="search-modal-bar"
                       data-name="search-modal-bar"
                       placeholder="جستوجو"
                       id="search-modal-bar"
                     />
-                    <a href="#" className="search-btn w-button"></a>
+                    <a href="/" className="search-btn w-button">
+                      temp
+                    </a>
                   </form>
                   <div className="w-form-done"></div>
                   <div className="w-form-fail"></div>
@@ -213,7 +215,7 @@ class SearchModal extends React.Component {
             </div>
           </div>
         </ReactModal>
-      </Fragment>
+      </>
     );
   }
 }

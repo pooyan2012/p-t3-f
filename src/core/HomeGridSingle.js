@@ -1,6 +1,6 @@
 import React from "react";
 import HomeLikeCmRate from "./HomeLikeCmRate";
-import LazyBackground from "../tools/LazyBackground";
+//import LazyBackground from "../tools/LazyBackground";
 
 const HomeGridSingle = (props) => {
   return (
