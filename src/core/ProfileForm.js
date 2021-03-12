@@ -1,6 +1,18 @@
 import React from "react";
+import { connect } from "react-redux";
+import { startLogout } from "../states/actions/auth";
 
-const ProfileForm = () => {
+const ProfileForm = ({ startLogout }) => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      console.log("this is from logout!!!!!!");
+      await startLogout();
+    } catch (e) {
+      console.log(e);
+    }
+  };
   return (
     <>
       <div className="profile-modal-pic"></div>
@@ -36,9 +48,12 @@ const ProfileForm = () => {
             data-name="Register Form"
             className="profile-modal-form"
           >
-            <a href="#" className="profile-modal-btn w-button">
+            <button
+              className="profile-modal-btn w-button"
+              onClick={handleSubmit}
+            >
               خروج
-            </a>
+            </button>
           </form>
           <div className="success-message w-form-done"></div>
           <div className="error-message w-form-fail"></div>
@@ -48,4 +63,8 @@ const ProfileForm = () => {
   );
 };
 
-export default ProfileForm;
+const mapDispatchToProps = (dispatch) => ({
+  startLogout: () => dispatch(startLogout()),
+});
+
+export default connect(undefined, mapDispatchToProps)(ProfileForm);

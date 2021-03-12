@@ -4,7 +4,6 @@ import RegisterForm from "./RegisterForm";
 import LoginForm from "./LoginForm";
 import ProfileForm from "./ProfileForm";
 import { connect } from "react-redux";
-import { RemoveShoppingCartSharp } from "@material-ui/icons";
 
 ReactModal.setAppElement("#user-modal");
 
@@ -15,7 +14,7 @@ class UserModal extends React.Component {
   };
 
   handleToggleModal = () => {
-    console.log("==============> " + JSON.stringify(this.props.auth.user));
+    //console.log("==============> " + JSON.stringify(this.props.auth.user));
     this.setState({ showModal: !this.state.showModal });
   };
 
@@ -27,7 +26,7 @@ class UserModal extends React.Component {
     });
   };
 
-  handleRendering = () => {
+  handleRenderingUserModals = () => {
     if (this.props.auth.user.user._id) {
       return <ProfileForm />;
     } else {
@@ -38,6 +37,7 @@ class UserModal extends React.Component {
       );
     }
   };
+
   render() {
     return (
       <>
@@ -80,7 +80,7 @@ class UserModal extends React.Component {
               />
             </button>
           </div>
-          {this.handleRendering()}
+          {this.handleRenderingUserModals()}
         </ReactModal>
       </>
     );
@@ -98,5 +98,4 @@ ReactDOM.render(
 
 const mapStateToProps = (state) => ({ auth: state.auth });
 
-//export default UserModal;
 export default connect(mapStateToProps)(UserModal);

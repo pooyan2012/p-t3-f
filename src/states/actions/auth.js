@@ -36,3 +36,36 @@ export const startLogin = (userData = {}) => {
       });
   };
 };
+
+export const logout = () => ({
+  type: "LOGOUT",
+});
+
+export const startLogout = () => {
+  return (dispatch) => {
+    //later use axios library
+    return fetch(`${API}/signout`, {
+      method: "GET",
+      redirect: "follow",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => {
+        /*sample response
+            {
+              "message": "Signout success"
+            }
+        */
+        return response;
+      })
+      .then((result) => {
+        console.log("===============> " + result);
+        return dispatch(logout());
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+};
