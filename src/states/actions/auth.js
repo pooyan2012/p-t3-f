@@ -8,16 +8,16 @@ export const login = ({ token, user, error } = {}) => ({
 });
 
 /*sample response
-            {
-                "token": "token value",
-                "user": {
-                    "_id": "user id",
-                    "email": "user email",
-                    "name": "user name",
-                    "role": user name as a number
-                }
-            }
-        */
+  {
+      "token": "token value",
+      "user": {
+          "_id": "user id",
+          "email": "user email",
+          "name": "user name",
+          "role": user name as a number
+      }
+  }
+*/
 export const startLogin = (userData = {}) => {
   return (dispatch) => {
     //later use axios library
@@ -69,7 +69,7 @@ export const startLogout = () => {
         return response;
       })
       .then((result) => {
-        console.log("===============> " + result);
+        //console.log("===============> " + result);
         return dispatch(logout());
       })
       .catch((err) => {
