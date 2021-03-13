@@ -7,25 +7,24 @@ const LoginForm = ({ startLogin, auth }) => {
     email: "",
     password: "",
     error: "",
-    success: false,
+    loading: false,
+    redirectToReferrer: false,
   });
 
-  const { email, password } = values;
+  const { email, password, error, loading, redirectToReferrer } = values;
 
   //higher order function(hoc): a function that return other function
   const handleChange = (name) => (event) => {
     setValues({ ...values, error: false, [name]: event.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    //signIn({ email, password });
-    try {
-      await startLogin({ email, password });
-      console.log("TTTTT => " + auth.user.user._id);
-    } catch (e) {
-      console.log(e);
-    }
+
+    setValues({ ...values, loading: true });
+
+    startLogin({ email, password });
+    console.log("TTTTT => " + auth.user._id);
   };
 
   const signForm = () => (

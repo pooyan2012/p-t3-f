@@ -1,10 +1,23 @@
 import { API } from "../../config";
 
-export const login = (user = {}) => ({
+export const login = ({ token, user, error } = {}) => ({
   type: "LOGIN",
+  token,
   user,
+  error,
 });
 
+/*sample response
+            {
+                "token": "token value",
+                "user": {
+                    "_id": "user id",
+                    "email": "user email",
+                    "name": "user name",
+                    "role": user name as a number
+                }
+            }
+        */
 export const startLogin = (userData = {}) => {
   return (dispatch) => {
     //later use axios library
@@ -17,22 +30,17 @@ export const startLogin = (userData = {}) => {
       body: JSON.stringify(userData), //userDate={email:"user email",password:"user password"}
     })
       .then((response) => {
-        /*sample response
-            {
-                "token": "token value",
-                "user": {
-                    "_id": "user id",
-                    "email": "user email",
-                    "name": "user name",
-                    "role": user name as a number
-                }
-            }
-        */
+        console.log(`response ===========>   ${JSON.stringify(response)}`);
         return response.json();
       })
-      .then((fetchedData) => dispatch(login(fetchedData)))
+      .then((fetchedData) => {
+        console.log(
+          `fetchedData ===========>   ${JSON.stringify(fetchedData)}`
+        );
+        return dispatch(login(fetchedData));
+      })
       .catch((err) => {
-        console.log(err);
+        console.log(`this is error: ${err}`);
       });
   };
 };

@@ -6,6 +6,7 @@ const ProfileForm = ({ startLogout }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+
     try {
       console.log("this is from logout!!!!!!");
       await startLogout();
