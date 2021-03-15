@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { startLogin } from "../states/actions/auth";
+import { isEmail } from "validator/lib/isEmail";
 
 const LoginForm = ({ startLogin, auth }) => {
   const [values, setValues] = useState({
@@ -15,16 +16,23 @@ const LoginForm = ({ startLogin, auth }) => {
 
   //higher order function(hoc): a function that return other function
   const handleChange = (name) => (event) => {
-    setValues({ ...values, error: false, [name]: event.target.value });
+    setValues({ ...values, error: "", [name]: event.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     setValues({ ...values, loading: true });
 
-    startLogin({ email, password });
-    console.log("TTTTT => " + auth.user._id);
+    await startLogin({ email, password });
+    if (auth.error) {
+      console.log(`${auth.error}`);
+      setValues({ ...values, loading: false, error: auth.error });
+    }
+
+    setValues({ ...values, loading: false });
+
+    console.log(`2==> ${error}`);
   };
 
   const signForm = () => (
@@ -61,13 +69,15 @@ const LoginForm = ({ startLogin, auth }) => {
       <div className="login-modal-rules-div">
         <div className="login-modal-remember-me-div">
           <div className="login-modal-remember-me-text">
-            مرا بخاطر داشته باش
+            مرا بخاطر داشته باش{error}
           </div>
 
           <input type="checkbox" id="remember" name="remember" value="0" />
         </div>
         <div className="login-modal-pass-forgotten-text">فراموشی رمز عبور؟</div>
       </div>
+
+      {error}
 
       <button className="login-modal-btn w-button" onClick={handleSubmit}>
         ورود
