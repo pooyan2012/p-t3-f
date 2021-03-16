@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { startLogin } from "../states/actions/auth";
-import { isEmail } from "validator/lib/isEmail";
+import isEmail from "validator/lib/isEmail";
 
 const LoginForm = ({ startLogin, auth }) => {
   const [values, setValues] = useState({
@@ -22,17 +22,21 @@ const LoginForm = ({ startLogin, auth }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    setValues({ ...values, loading: true });
-
-    await startLogin({ email, password });
-    if (auth.error) {
-      console.log(`${auth.error}`);
-      setValues({ ...values, loading: false, error: auth.error });
+    if (!isEmail(email)) {
+      setValues({ ...values, loading: true, error: "enter correct email!" });
+      console.log(`========>========> ${JSON.stringify(values)}`);
+      return;
     }
 
-    setValues({ ...values, loading: false });
+    try {
+      await startLogin({ email, password });
+      if (auth.error) {
+       // console.log(`====++++> ${auth.error}`);
+        setValues({ ...values, loading: true, error: auth.error });
+      }
+    } catch (e) {}
 
-    console.log(`2==> ${error}`);
+    console.log(`2==> ${JSON.stringify(values)}`);
   };
 
   const signForm = () => (
@@ -69,7 +73,7 @@ const LoginForm = ({ startLogin, auth }) => {
       <div className="login-modal-rules-div">
         <div className="login-modal-remember-me-div">
           <div className="login-modal-remember-me-text">
-            مرا بخاطر داشته باش{error}
+            مرا بخاطر داشته باش
           </div>
 
           <input type="checkbox" id="remember" name="remember" value="0" />

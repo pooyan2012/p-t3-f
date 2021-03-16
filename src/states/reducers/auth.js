@@ -7,7 +7,7 @@ const authReducerDefaultState = {
 const authReducer = (state = authReducerDefaultState, action) => {
   switch (action.type) {
     case "LOGIN":
-      console.log(`this is from reducer: ${action.error}`);
+      //console.log(`this is from reducer: ${action.error}`);
       return {
         ...state,
         token: action.token ? action.token : "",

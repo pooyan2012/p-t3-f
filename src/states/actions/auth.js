@@ -30,17 +30,17 @@ export const startLogin = (userData = {}) => {
       body: JSON.stringify(userData), //userDate={email:"user email",password:"user password"}
     })
       .then((response) => {
-        console.log(`response ===========>   ${JSON.stringify(response)}`);
+        //console.log(`response ===========>   ${response}`);
         return response.json();
       })
       .then((fetchedData) => {
-        console.log(
-          `fetchedData ===========>   ${JSON.stringify(fetchedData)}`
-        );
+        //console.log(
+         // `fetchedData ===========>   ${JSON.stringify(fetchedData)}`
+       // );
         return dispatch(login(fetchedData));
       })
       .catch((err) => {
-        console.log(`this is error: ${err}`);
+       // console.log(`this is error: ${err}`);
       });
   };
 };
