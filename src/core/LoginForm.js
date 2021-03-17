@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { startLogin } from "../states/actions/auth";
+import Loading from "./Loading";
 import isEmail from "validator/lib/isEmail";
 
 const LoginForm = ({ startLogin, auth }) => {
@@ -14,29 +15,46 @@ const LoginForm = ({ startLogin, auth }) => {
 
   const { email, password, error, loading, redirectToReferrer } = values;
 
+  React.useEffect(() => {
+    console.log(`========>========> ${JSON.stringify(values)}`);
+  }, [values]);
+
   //higher order function(hoc): a function that return other function
   const handleChange = (name) => (event) => {
     setValues({ ...values, error: "", [name]: event.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
+    setValues({ ...values, loading: true });
+
     if (!isEmail(email)) {
-      setValues({ ...values, loading: true, error: "enter correct email!" });
-      console.log(`========>========> ${JSON.stringify(values)}`);
+      setValues({
+        ...values,
+        loading: false,
+        error: "لطفا ایمیل خود را وارد کنید",
+      });
       return;
     }
 
-    try {
-      await startLogin({ email, password });
-      if (auth.error) {
-       // console.log(`====++++> ${auth.error}`);
-        setValues({ ...values, loading: true, error: auth.error });
-      }
-    } catch (e) {}
+    //setTimeout(() => {
+    startLogin({ email, password })
+      .then((response) => {
+        if (response.error) {
+          console.log(`**********: ${JSON.stringify(response)}`);
 
-    console.log(`2==> ${JSON.stringify(values)}`);
+          return setValues({
+            ...values,
+            loading: false,
+            error: response.error,
+          });
+        }
+
+        setValues({ ...values, loading: false });
+      })
+      .catch((e) => console.log(e));
+    //}, 5000); //make a delay
   };
 
   const signForm = () => (
@@ -80,7 +98,6 @@ const LoginForm = ({ startLogin, auth }) => {
         </div>
         <div className="login-modal-pass-forgotten-text">فراموشی رمز عبور؟</div>
       </div>
-
       {error}
 
       <button className="login-modal-btn w-button" onClick={handleSubmit}>
@@ -105,6 +122,8 @@ const LoginForm = ({ startLogin, auth }) => {
           </div>
         </div>
         <div className="login-modal-form-div">
+          <div style={{ height: `7px` }}> {loading ? <Loading /> : ""}</div>
+          <br />
           <div className="w-form">
             {signForm()}
             <div className="success-message w-form-done"></div>
