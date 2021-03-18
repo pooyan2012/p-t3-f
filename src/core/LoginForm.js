@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { startLogin } from "../states/actions/auth";
 import Loading from "./Loading";
 import isEmail from "validator/lib/isEmail";
 
-const LoginForm = ({ startLogin, auth }) => {
-  const [values, setValues] = useState({
+const LoginForm = (props) => {
+  const { startLogin, auth } = props;
+  const [values, setValues] = React.useState({
     email: "",
     password: "",
     error: "",
@@ -33,7 +34,7 @@ const LoginForm = ({ startLogin, auth }) => {
       setValues({
         ...values,
         loading: false,
-        error: "لطفا ایمیل خود را وارد کنید",
+        error: "لطفا ایمیل خود را بصورت صحیح وارد کنید",
       });
       return;
     }
@@ -113,7 +114,7 @@ const LoginForm = ({ startLogin, auth }) => {
           <div className="login-modal-header">ورود/عضویت</div>
           <div className="login-modal-registration-div">
             <button
-              //onClick={props.clickHandler}
+              onClick={props.clickHandler}
               className="user-modal-close-btn"
             >
               <div className="login-modal-registration-a">عضو شوید</div>
