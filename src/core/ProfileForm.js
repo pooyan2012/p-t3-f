@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { startLogout } from "../states/actions/auth";
 
-const ProfileForm = ({ startLogout, auth }) => {
+const ProfileForm = ({ startLogout, user }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -18,7 +18,7 @@ const ProfileForm = ({ startLogout, auth }) => {
       <div className="profile-modal-pic"></div>
       <div className="profile-modal-title-div">
         <div className="profile-modal-greeting">
-          سلام {auth.user.name}، خوش آمدی
+          سلام {user.user.name}، خوش آمدی
         </div>
         <div className="profile-modal-position">مدیر سایت</div>
       </div>
@@ -65,7 +65,7 @@ const ProfileForm = ({ startLogout, auth }) => {
   );
 };
 
-const mapStateToProps = (state) => ({ auth: state.auth });
+const mapStateToProps = (state) => ({ user: state.user });
 
 const mapDispatchToProps = (dispatch) => ({
   startLogout: () => dispatch(startLogout()),

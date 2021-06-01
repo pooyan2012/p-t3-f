@@ -27,7 +27,7 @@ class UserModal extends React.Component {
   };
 
   handleRenderingUserModals = () => {
-    if (this.props.auth.user._id) {
+    if (this.props.user.user._id) {
       return <ProfileForm />;
     } else {
       return this.state.switchForm === 0 ? (
@@ -56,7 +56,7 @@ class UserModal extends React.Component {
           >
             <path
               d="M10 10.96C12.75 10.96 15 8.71002 15 5.96002C15 3.21002 12.75 0.960022 10 0.960022C7.25 0.960022 5 3.21002 5 5.96002C5 8.71002 7.25 10.96 10 10.96ZM10 13.46C6.625 13.46 0 15.085 0 18.46V20.96H20V18.46C20 15.085 13.375 13.46 10 13.46Z"
-              fill={this.props.auth.user.name ? "#4796FF" : "#CFCFCF"}
+              fill={this.props.user.user.name ? "#4796FF" : "#CFCFCF"}
             />
           </svg>
         </button>
@@ -96,6 +96,6 @@ ReactDOM.render(
 );
 */
 
-const mapStateToProps = (state) => ({ auth: state.auth });
+const mapStateToProps = (state) => ({ user: state.user });
 
 export default connect(mapStateToProps)(UserModal);

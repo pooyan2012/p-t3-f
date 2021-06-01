@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Routes from "./routers/Routes";
+import App from "./app";
 import { Provider } from "react-redux";
-import configureStore from "./states/store/configureStore";
+import configureStore from "./redux/store";
 import "./styles/styles.scss";
 
-const store = configureStore();
+const store = configureStore;
 
 ReactDOM.render(
   <Provider store={store}>
-    <Routes />
+    <App />
   </Provider>,
   document.getElementById("root")
 );
